@@ -1,0 +1,118 @@
+.testimonials {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+    max-width: 1200px;
+}
+
+.next-btn, .prev-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #212EA0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul {
+    display: flex;
+    transition: 0.5s ease-in-out;
+    transform: translateX(0);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.slider ul li {
+    list-style: none;
+    width: 50%;
+    flex: 0 0 50%;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.slide {
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    color: #676767;
+    line-height: 1.4;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.slide img {
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid blue;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.team-info h3 {
+    color: blue;
+}
+
+/*------Media Query ----*/
+
+@media (max-width: 800px) {
+    .testimonials {
+        padding: 0 40px;
+    }
+
+    .next-btn, .prev-btn {
+        padding: 10px;
+        width: 35px;
+    }
+    .slider ul li{
+        padding: 10px;
+
+    }
+    .slide {
+        padding: 10px;
+    }
+
+    .slide img {
+        width: 50px;
+        border: 2px solid blue;
+    }
+}
+
+@media (max-width: 600px){
+    .team-info {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .team-info h3 {
+        font-size: 16px;
+    }
+    .slider p{
+        font-size: 12px;
+    }
+}
